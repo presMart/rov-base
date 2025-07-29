@@ -21,7 +21,7 @@ This project implements a tethered, camera-equipped ROV capable of receiving liv
 
 Designed as a foundation for future projects including DIY sonar, underwater communication experiments, and modular payload systems.
 
-> ✨ **Tethering Strategy**: The ROV is *not* tethered to shore. Instead, it connects to a nearby surface float which houses a Wi-Fi relay. This dramatically increases operating range (up to ~150m line-of-sight), reduces tether drag, and eliminates the need for a long, expensive shore-to-ROV cable.
+>  **Tethering Strategy**: The ROV is *not* tethered to shore. Instead, it connects to a nearby surface float which houses a Wi-Fi relay. This dramatically increases operating range (up to ~150m line-of-sight), reduces tether drag, and eliminates the need for a long, expensive shore-to-ROV cable.
 
 ---
 
