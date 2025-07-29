@@ -1,0 +1,73 @@
+{
+    "trusted_clients": ["10.0.0.", "127.0.0.1", "192.168.1."],
+    "motor_channels": {
+        "motor_horizontal_left": {
+            "channel": 13,
+            "type": "brushless"
+        },
+        "motor_horizontal_right": {
+            "channel": 18,
+            "type": "brushless"
+        },
+        "motor_vertical_front": {
+            "channel": 2,
+            "type": "brushed"
+        },
+        "motor_vertical_rear": {
+            "channel": 3,
+            "type": "brushed"
+        }
+    },
+    "motor_smoothing_factor": 0.8,
+    "input_poll_rate_hz": 100,
+    "estop_duration": 2.0,
+    "gamepad_deadzone": 0.1,
+    "gamepad_thrust_steps": [0.25, 0.5, 0.75, 1.0],
+    "boost_buttons": [10, 11],
+    "burst_thrust_val": 0.75,
+    "pwm_min": 1100,
+    "pwm_neutral": 1500,
+    "pwm_max": 1900,
+    "pwm_freq": 50,
+    "voltage_warning": 10.5,
+    "voltage_limited": 9.8,
+    "voltage_critical": 9.3,
+    "depth_sensor": {
+        "adc_channel": 1,
+        "voltage_range": [0.5, 4.5],
+        "pressure_range_psi": [0.0, 30.0],
+        "atmospheric_psi": 14.7
+    },
+    "telemetry_host": "192.168.1.225",
+    "host": "0.0.0.0",
+    "port": 9000,
+    "camera_device_index": 0,
+    "camera_resolution": [
+        640,
+        480
+    ],
+    "camera_fps": 30,
+    "camera_stream_url": "http://rov.local:8000/stream.mjpg",
+    "log_file_path": "rov_log.txt",
+    "logging_max_lines": 500,
+    "heartbeat_interval": 30,
+    "telemetry_poll_rate_ms": 200,
+    "dht_sensor_map": {
+        "battery_dht": {
+            "gpio": 17,
+            "type": "DHT22"
+        },
+        "pdb_dht": {
+            "gpio": 27,
+            "type": "DHT22"
+        },
+        "esc_dht": {
+            "gpio": 23,
+            "type": "DHT22"
+        },
+        "pi_dht": {
+            "gpio": 24,
+            "type": "DHT22"
+        }
+    }
+}
